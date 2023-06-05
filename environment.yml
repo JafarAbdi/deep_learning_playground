@@ -1,0 +1,20 @@
+name: deep_learning_playground
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.11.0
+  - debugpy
+  - jupyterlab
+  - matplotlib
+  - pandas
+  - numpy
+  - pip
+  - tqdm
+  - pip:
+    - torch 
+    - torchvision 
+    - torchaudio
+    - jupyterlab-vim
+
