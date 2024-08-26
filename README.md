@@ -3,11 +3,11 @@
 ## Installation
 
 ```bash
-micromamba create --yes --file environment.yml
+pixi install -a
 ```
 
 ## Usage
 
 ```bash
-micromamba run -n deep_learning_playground jupyter lab
+pixi run jupyter lab
 ```

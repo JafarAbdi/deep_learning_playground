@@ -3,10 +3,11 @@ name = "deep_learning_playground"
 version = "0.1.0"
 description = "Add a short description here"
 authors = ["JafarAbdi <jafar.uruc@gmail.com>"]
-channels = ["conda-forge"]
+channels = ["conda-forge", "pytorch", "fastai"]
 platforms = ["linux-64"]
 
 [tasks]
+jupyter = "jupyter lab --ip=0.0.0.0"
 
 [dependencies]
 python = "3.11.0.*"
@@ -16,10 +17,8 @@ pandas = "*"
 numpy = "*"
 pip = "*"
 tqdm = "*"
-
-[pypi-dependencies]
-torch = "*"
-torchvision = "*"
-torchaudio = "*"
-ipywidgets = "*"
-wandb = "*"
+nbdev = { version = "*", channel = "fastai" }
+pytorch = { version = ">=2.4.0,<3", channel = "pytorch" }
+torchvision = { version = ">=0.15", channel = "pytorch" }
+scikit-learn = ">=1.5.1,<2"
+vit-pytorch = ">=1.7.11,<2"
