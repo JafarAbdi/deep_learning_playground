@@ -11,3 +11,9 @@ pixi install -a
 ```bash
 pixi run jupyter lab
 ```
+
+## Lint
+
+```bash
+pixi run lint
+```
